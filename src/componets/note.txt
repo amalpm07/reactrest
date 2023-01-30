@@ -1,0 +1,85 @@
+api call in js
+--------------
+ 
+ AJAX
+
+  -XMLhttp
+  -fetch
+  -asynch await
+
+
+useEffect:-its like ngoninit
+
+
+redierection in react
+---------------------
+react-router-dom
+
+npm i react-router-dom -install
+
+Browser Router : all routing needs componets
+routes : to set paths for each componets
+route : morethan one path
+
+useParams -hook is used to access params from componet url
+
+Redux
+-----
+coupling :- is used to share data in project.many connection between pafrent and child componet
+
+props drilling :- in coupling if any intermediate componet have any errors all other
+                  childs will not work
+
+
+to avoid props drilling we need to reduce coupling and make all the componet
+independed
+
+for this react introduced a new tecnology -state management technology -Redux
+
+
+
+redux process 
+--------------
+create a js  file to keep the states,all the componets can access the js file
+
+The componets can access the data from the js file,
+but we cant update data in the js file.
+
+
+Action -> a file with all the logic to update the state
+
+Dispatch -> method used to Dispatch the logic in action file when the componet
+            need state updation 
+Reducer ->update the datas in jsnfile according to the payload response 
+          get from action file
+              
+
+  payload - is data
+
+
+libraries to apply redux
+-----------------------
+
+!.Redux
+2.REACT REDUX
+3.REDUX-THUNK
+
+npm i redux react-redux redux-thunk
+
+
+createStore()-method used to create store in js file
+
+two arguments
+
+1.Reducer:-to update store
+2.middleware:-used to make synchronus redux into asynchronus
+
+applyMiddleware():-this method is used to apply middleware
+
+combaineReducers():-method in REDUX used to combaine all the Reducer in js file
+
+thunk():-used to create middleware
+
+
+create store
+apply the store in index.js   <provider> is used to apply(react-redux)
